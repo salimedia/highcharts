@@ -3233,6 +3233,7 @@ H.extend(Axis.prototype, /** @lends Highcharts.Axis.prototype */{
         // Dictionary for stacks
         axis.stacks = {};
         axis.oldStacks = {};
+        axis.waterfallStacks = {};
         axis.stacksTouched = 0;
 
 

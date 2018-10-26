@@ -535,6 +535,12 @@ extend(Chart.prototype, /** @lends Highcharts.Chart.prototype */ {
         // reset stacks
         if (hasStackedSeries) {
             chart.getStacks();
+
+            each(axes, function (axis) {
+                if (!axis.isXAxis) {
+                    axis.waterfallStacks = {};
+                }
+            });
         }
 
 
